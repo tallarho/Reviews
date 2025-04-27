@@ -1,0 +1,83 @@
+.auth {
+    width: 250px;
+    height: 400px;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    a{
+        display: block;
+        cursor: pointer;
+        margin-top: 10vh;
+    }
+}
+.reg {
+    width: 250px;
+    height: 300px;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    a{
+        display: block;
+        cursor: pointer;
+        margin-top: 10vh;
+    }
+}
+.home{
+    width: 700px;
+    box-shadow: 0px 0px 5px 0px silver;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    padding: 20px;
+    button{
+        padding: 10px;
+        width: 200px;
+        margin-left: 10px;
+    }
+}
+.wrapper{
+    width: 800px;
+    height: 800px;
+    border: 1px solid #000;
+    margin: auto;
+    position: relative;
+}
+.store{
+    width: 600px;
+    height: 700px;
+    border: 1px solid #000;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.reviews{
+    width: 100%;
+}
+.scroll-box{
+    width: auto;
+    height: 300px;
+    border: 1px solid #000;
+    overflow: scroll;
+}
+.arrows button {
+    padding: 10px;
+    width: 60px;
+}
+.arrows .first-arrow{
+    position: absolute;
+    left: 1.5em;
+    top: 12em;
+}
+.arrows .second-arrow{
+    position: absolute;
+    right: 1.5em;
+    top: 12em;
+}
