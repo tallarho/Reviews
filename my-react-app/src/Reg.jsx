@@ -5,6 +5,19 @@ export default function Reg({onLogin}) {
     const [login, setLogin] = useState('')
     const [pass, setPass] = useState('')
     const navigate = useNavigate()
+
+    let arr = []
+    const saved = localStorage.getItem('user') 
+    if( saved !== null){
+        try{
+            arr = JSON.parse(saved)
+        } catch (e) {
+            console.error('Ошибка', e)
+            arr = []
+        }
+    }
+
+
     const handleSubmit = () => {
 
         const newUser = {
@@ -12,17 +25,7 @@ export default function Reg({onLogin}) {
             pass: pass
         }
 
-        let arr = []
-        const saved = localStorage.getItem('user') 
-        if( saved !== null){
-            try{
-                arr = JSON.parse(saved)
-            } catch (e) {
-                console.error('Ошибка', e)
-                arr = []
-            }
-        }
-
+       
         arr.push(newUser)
 
         localStorage.setItem('user', JSON.stringify(arr))
